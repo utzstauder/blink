@@ -20,7 +20,7 @@ public class Hammer : BlinkableObject {
 	void Awake () {
 		numberOfStates = 2;
 
-		hammerAnchor = transform.FindChild("HammerAnchor");
+		hammerAnchor = transform.Find("HammerAnchor");
 
 		idleRotation = Quaternion.Euler(idleRotationX, 0, 0);
 		groundRotation = Quaternion.Euler(groundRotationX, 0, 0);

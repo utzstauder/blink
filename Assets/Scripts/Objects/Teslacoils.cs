@@ -19,7 +19,7 @@ public class Teslacoils : BlinkableObject {
 
 		particleSystems = GetComponentsInChildren<ParticleSystem>();
 		lights = GetComponentsInChildren<Light>();
-		killzone = transform.FindChild("Killzone").gameObject;
+		killzone = transform.Find("Killzone").gameObject;
 
 		audioSource = GetComponent<AudioSource>();
 
